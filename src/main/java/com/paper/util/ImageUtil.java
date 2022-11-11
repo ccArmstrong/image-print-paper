@@ -32,6 +32,12 @@ public class ImageUtil {
 		return null;
 	}
 	
+	/**
+	 * 基于输入流进行图像合并, 并用bytes数组输出
+	 * @param is1 第一张图片 文件流
+	 * @param is2 第二张图片 文件流
+	 * @return byte[] 图片流
+	 */
 	public static byte[] imageMergeToBytesBaseIO(InputStream is1, InputStream is2) {
 		try {
 			BufferedImage prosImg = ImageIO.read(is1);
